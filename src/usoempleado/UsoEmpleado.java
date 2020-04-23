@@ -3,7 +3,6 @@ package usoempleado;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -84,6 +83,8 @@ public class UsoEmpleado {
     
 }
 class Empleado implements Comparable,Trabajador,/*parte practica 2*/Serializable{//esta clase Empleado implementa de la inteerfaz Comparable su unico metodo
+    
+    //private static final long serialVersionUID = 1L; esta es la forma de poner la huella de versio a la app;;
     
     public Empleado(String nom,double sue,int dia,int mes,int año){//metodo construcutor de la clase Empleado
         nombre = nom;
